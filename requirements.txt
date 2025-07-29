@@ -2,7 +2,9 @@ langchain
 langchain-community
 langchain-openai
 langchain_ollama
+langchain-chroma
 tiktoken
 chromadb
+unstructured
 
 nest_asyncio
