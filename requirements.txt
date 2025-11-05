@@ -3,6 +3,7 @@ langchain-community
 langchain-openai
 langchain_ollama
 langchain-chroma
+langgraph
 tiktoken
 chromadb
 unstructured
