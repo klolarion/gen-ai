@@ -1,11 +1,61 @@
+# ============================================================================
+# 1. 기본 패키지 
+# ============================================================================
+openai          # OpenAI API 직접 호출 
+ollama         # Ollama 모델 사용
+python-dotenv   # 환경변수 관리
+
+# ============================================================================
+# 2. LangChain 관련 패키지 
+# ============================================================================
 langchain
 langchain-community
+langchain_text_splitters
 langchain-openai
-langchain_ollama
-langchain-chroma
-langgraph
+langchain_ollama 
 tiktoken
-chromadb
-unstructured
 
+# ============================================================================
+# 3. 벡터 데이터베이스 
+# ============================================================================
+langchain-chroma
+chromadb
+rank_bm25
+sentence-transformers  # Reranker 모델용
+
+# ============================================================================
+# 4. LangGraph 
+# ============================================================================
+langgraph
+
+# ============================================================================
+# 5. 문서 처리 
+# ============================================================================
+unstructured     # 비정형 데이터 처리 (Excel, PPT 등 로더 필수)
+pypdf           # PDF 읽기
+pymupdf
+reportlab        # PDF 생성
+python-docx      # DOCX 생성/읽기
+openpyxl         # Excel 읽기/쓰기
+msoffcrypto-tool # Excel 암호화 해제 (필수 의존성)
+python-pptx      # PPT 읽기
+olefile          # HWP 읽기 (기본 텍스트 추출용)
+pyhwp            # HWP 읽기 (고급 파싱용)
+
+# OCR 관련 (HWP -> PDF -> OCR용)
+pytesseract      # Tesseract OCR Python 래퍼
+pdf2image        # PDF를 이미지로 변환 (OCR 전처리)
+pillow           # 이미지 처리 (pdf2image 의존성)
+# pywin32          # Windows COM 인터페이스 (HWP -> PDF 자동 변환용, Windows만) - macOS에서는 불필요
+
+# ============================================================================
+# 6. 유틸리티
+# ============================================================================
+wikipedia
 nest_asyncio
+streamlit       # UI 구축 
+gradio          # UI 구축 
+
+
+# pip install --upgrade pip
+# pip install -r requirements.txt
